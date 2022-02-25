@@ -19,6 +19,10 @@ footer{
     color: $text-color;
     cursor: none;
     border-radius:0px 0px 20px 20px  ;
+    .not-playing{
+        font-weight: 400;
+        font-size: x-small;
+    }
 }
 .channel_list{
     background-color: $list-color;

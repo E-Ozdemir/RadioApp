@@ -24,7 +24,11 @@ export default function Radio() {
                     </div>
 
                 </div>
-            ) : (null)
+            ) : (
+                <div className='not-playing'>
+                    Click any channel to listen!
+                </div>
+            )
         )
     }
     return (
