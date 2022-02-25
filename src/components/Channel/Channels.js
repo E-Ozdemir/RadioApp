@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import './Channel.scss'
+
+
+
+
+
 const Channels = ({ channel, setIsPlaying, isPlaying, setChannelName, key }) => {
 
     const [showImage, setShowImage] = useState(false);
@@ -8,18 +13,21 @@ const Channels = ({ channel, setIsPlaying, isPlaying, setChannelName, key }) => 
         setIsPlaying(!isPlaying);
         setChannelName(channel.name);
     }
-    
+
     const withImage = () => {
         return (
             <div className='channel_wrapper_image'>
                 <div className='image_wrapper'>
-                    <img className='radio_image' src={channel.image} alt="" />      
+                 {/* Fontawesome */}
+                    
+                    <img className='radio_image' src={channel.image} alt="" />
+                     {/* Fontawesome */}
                 </div>
                 <div className='channel_wrapper'>
                     <span>{channel.name}</span>
                     <span>{channel.frequency}</span>
                 </div>
-                
+
             </div>
         )
     }
@@ -29,7 +37,7 @@ const Channels = ({ channel, setIsPlaying, isPlaying, setChannelName, key }) => 
                 {/* <p>a{key}</p> */}
                 <p>{channel.name}</p>
                 <p>{channel.frequency}</p>
-               
+
             </div>
         )
     }
@@ -37,7 +45,7 @@ const Channels = ({ channel, setIsPlaying, isPlaying, setChannelName, key }) => 
     return (
         <div className="channels" onClick={() => isRadioOpen()}>
             {showImage ? withImage() : withoutImage()}
-            
+
         </div>
     )
 }

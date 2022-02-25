@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import Channels from '../Channel/Channels';
-import axios from 'axios';
 import { getRequest } from '../../utils/HttpRequest';
 import './Radio.scss'
 
@@ -28,14 +27,13 @@ export default function Radio() {
             ) : (null)
         )
     }
-
-    const myFunc = () => {
-        return
-    }
     return (
         <div className='main'>
             <header className='radio_header'>
-                STATIONS
+                 {/* Fontawesome */}
+                <span>STATIONS</span>
+                 {/* Fontawesome */}
+                
             </header>
             <section className='channel_list'>
                 {radio?.map((channel, index) => {
