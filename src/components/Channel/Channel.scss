@@ -1,0 +1,20 @@
+.channels{
+    cursor: pointer;
+    border-bottom: 1px solid #968383;
+}
+.radio_image{
+    border-radius: 50%;
+    height: 100px;
+}
+.image_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.channel_wrapper{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items:flex-end;
+padding-top: 10px;
+}
