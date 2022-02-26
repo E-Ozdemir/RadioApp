@@ -29,7 +29,7 @@ export default function Radio() {
     <div className="main">
       <header className="radio_header">
         <FontAwesomeIcon icon={faAngleLeft} />
-        <span>STATIONS</span>
+        <h3>STATIONS</h3>
         <FontAwesomeIcon icon={faPowerOff} />
       </header>
       <section className="channel_list">

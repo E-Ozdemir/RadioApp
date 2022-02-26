@@ -10,13 +10,14 @@ $thirt-color: #e3af55;
     padding: 10px 0;
     border-radius: 20px 20px 0px 0px ;
     color: white;
-    font-size: 1.3rem;
     font-weight: 500;
-    cursor: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-family: 'Nanum Pen Script', cursive;
+    h3{
+        cursor: none;
+    }
 }
 footer{
     background-color: $list-color;
