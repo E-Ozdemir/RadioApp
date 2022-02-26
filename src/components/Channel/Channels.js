@@ -9,9 +9,8 @@ const Channels = ({
   setIsPlaying,
   isPlaying,
   setChannelName,
-  // added channelName
   channelName,
- 
+
 }) => {
   const [showImage, setShowImage] = useState(false);
   function isRadioOpen() {
@@ -19,12 +18,10 @@ const Channels = ({
     setIsPlaying(!isPlaying);
     setChannelName(channel.name);
   }
-  // added useEffect
   useEffect(() => {
     channelName !== channel.name && setShowImage(false);
     channelName !== channel.name && setIsPlaying(true);
   }, [channelName]);
-  //*************************+ */
 
   const withImage = () => {
     return (

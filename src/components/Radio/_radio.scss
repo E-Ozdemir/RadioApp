@@ -1,42 +1,41 @@
+@import "../../styles/variables";
 
-@import "../base";
-
-.radio_header{
-    background-color: $thirt-color;
-    min-height: 50px;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 20px 20px 0px 0px ;
-    color: white;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-family: 'Nanum Pen Script', cursive;
-    h3{
-        cursor: none;
-    }
-}
-footer{
-    background-color: $list-color;
-    text-align: center;  
-    color: $text-color;
+.radio_header {
+  background-color: $thirt-color;
+  min-height: 50px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Nanum Pen Script", cursive;
+  h3 {
     cursor: none;
-    border-radius:0px 0px 20px 20px  ;
-    font-family: 'Nanum Pen Script', cursive;
-    .not-playing{
-        font-weight: 400;
-        font-size: small;
-    }
-    #playing-text{
-        color:$thirt-color;
-        font-size: x-small;
-    }
+  }
 }
-.channel_list{
-    background-color: $list-color;
-    padding: 5px 10px;
-    color: $text-color;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size:large;
+footer {
+  background-color: $list-color;
+  text-align: center;
+  color: $text-color;
+  cursor: none;
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Nanum Pen Script", cursive;
+  .not-playing {
+    font-weight: 400;
+    font-size: small;
+  }
+  #playing-text {
+    color: $thirt-color;
+    font-size: x-small;
+  }
+}
+.channel_list {
+  background-color: $list-color;
+  padding: 5px 10px;
+  color: $text-color;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: large;
 }

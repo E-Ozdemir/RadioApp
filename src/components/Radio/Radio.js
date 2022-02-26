@@ -16,7 +16,7 @@ export default function Radio() {
   }, []);
 
   const footer = (isPlaying) => {
-    return (isPlaying && channelName ) ? (
+    return (isPlaying && channelName) ? (
       <div>
         <span id="playing-text">CURRENTLY PLAYING</span>
         <div className="">{channelName}</div>
@@ -41,7 +41,6 @@ export default function Radio() {
               isPlaying={isPlaying}
               setIsPlaying={setIsPlaying}
               setChannelName={setChannelName}
-              // added channelName
               channelName={channelName}
             />
           );

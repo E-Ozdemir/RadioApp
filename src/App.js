@@ -1,4 +1,4 @@
-import './App.scss';
+import '../src/styles/_app.scss';
 import Radio from './components/Radio/Radio';
 
 function App() {
