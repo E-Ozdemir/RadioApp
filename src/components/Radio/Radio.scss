@@ -1,6 +1,7 @@
 $list-color : #403232;
 $text-color : #968383;
 $thirt-color: #e3af55;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
 .radio_header{
     background-color: $thirt-color;
@@ -12,6 +13,10 @@ $thirt-color: #e3af55;
     font-size: 1.3rem;
     font-weight: 500;
     cursor: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Nanum Pen Script', cursive;
 }
 footer{
     background-color: $list-color;
@@ -19,9 +24,10 @@ footer{
     color: $text-color;
     cursor: none;
     border-radius:0px 0px 20px 20px  ;
+    font-family: 'Nanum Pen Script', cursive;
     .not-playing{
         font-weight: 400;
-        font-size: x-small;
+        font-size: small;
     }
 }
 .channel_list{
@@ -29,6 +35,8 @@ footer{
     padding: 5px 10px;
     color: $text-color;
     // border-radius: 0 0 25px 25px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size:large;
 }
 #playing-text{
     color:$thirt-color;
