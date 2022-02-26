@@ -16,12 +16,14 @@ export default function Radio() {
   }, []);
 
   const footer = (isPlaying) => {
-    return isPlaying ? (
+    return (isPlaying && channelName) ? (
       <div>
         <span id="playing-text">CURRENTLY PLAYING</span>
         <div className="">{channelName}</div>
       </div>
-    ) : (<div className="not-playing">Click any channel to listen!</div>);
+    ) : (
+      <div className="not-playing">Click any channel to listen!</div>
+    );
   };
   return (
     <div className="main">
