@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./Channel.scss";
+import "./_channel.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus, faCircleMinus } from "@fortawesome/free-solid-svg-icons";
 
 
-let show = false;
 const Channels = ({
   channel,
   setIsPlaying,
@@ -12,7 +11,7 @@ const Channels = ({
   setChannelName,
   // added channelName
   channelName,
-  key,
+ 
 }) => {
   const [showImage, setShowImage] = useState(false);
   function isRadioOpen() {

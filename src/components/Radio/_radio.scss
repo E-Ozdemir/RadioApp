@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-$list-color : #403232;
-$text-color : #968383;
-$thirt-color: #e3af55;
+
+@import "../base";
 
 .radio_header{
     background-color: $thirt-color;
@@ -30,6 +28,10 @@ footer{
         font-weight: 400;
         font-size: small;
     }
+    #playing-text{
+        color:$thirt-color;
+        font-size: x-small;
+    }
 }
 .channel_list{
     background-color: $list-color;
@@ -37,8 +39,4 @@ footer{
     color: $text-color;
     font-family: 'Nanum Pen Script', cursive;
     font-size:large;
-}
-#playing-text{
-    color:$thirt-color;
-    font-size: x-small;
 }

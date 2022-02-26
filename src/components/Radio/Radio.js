@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import Channels from "../Channel/Channels";
 import { getRequest } from "../../utils/HttpRequest";
-import "./Radio.scss";
+import "./_radio.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPowerOff, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,7 +16,7 @@ export default function Radio() {
   }, []);
 
   const footer = (isPlaying) => {
-    return (isPlaying && channelName) ? (
+    return (isPlaying && channelName ) ? (
       <div>
         <span id="playing-text">CURRENTLY PLAYING</span>
         <div className="">{channelName}</div>
