@@ -21,9 +21,7 @@ export default function Radio() {
         <span id="playing-text">CURRENTLY PLAYING</span>
         <div className="">{channelName}</div>
       </div>
-    ) : (
-      <div className="not-playing">Click any channel to listen!</div>
-    );
+    ) : (<div className="not-playing">Click any channel to listen!</div>);
   };
   return (
     <div className="main">
@@ -41,6 +39,8 @@ export default function Radio() {
               isPlaying={isPlaying}
               setIsPlaying={setIsPlaying}
               setChannelName={setChannelName}
+              // added channelName
+              channelName={channelName}
             />
           );
         })}

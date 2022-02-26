@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Channel.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlus, faCircleMinus } from "@fortawesome/free-solid-svg-icons";
 
+
+let show = false;
 const Channels = ({
   channel,
   setIsPlaying,
   isPlaying,
   setChannelName,
-  key
+  // added channelName
+  channelName,
+  key,
 }) => {
   const [showImage, setShowImage] = useState(false);
   function isRadioOpen() {
@@ -16,6 +20,12 @@ const Channels = ({
     setIsPlaying(!isPlaying);
     setChannelName(channel.name);
   }
+  // added useEffect
+  useEffect(() => {
+    channelName !== channel.name && setShowImage(false);
+    channelName !== channel.name && setIsPlaying(true);
+  }, [channelName]);
+  //*************************+ */
 
   const withImage = () => {
     return (
@@ -35,7 +45,6 @@ const Channels = ({
   const withoutImage = () => {
     return (
       <div className="channel_wrapper">
-        {/* <p>a{key}</p> */}
         <p>{channel.name}</p>
         <p>{channel.frequency}</p>
       </div>
@@ -51,19 +60,5 @@ const Channels = ({
 
 export default Channels;
 
-// <div className="channels" onClick={() => isRadioOpen()}>
-//     {showImage ? (
-//         <>
-//             <img src={channel.image} alt="" />
-//             <span>{channel.name}</span>
-//             <span>{channel.frequency}</span>
 
-//         </>
-//     ) : (
-//         <>
-//             <span>{channel.name}</span>
-//             <span>{channel.frequency}</span>
-//             <hr />
-//         </>
-//     )}
-// </div>
+
